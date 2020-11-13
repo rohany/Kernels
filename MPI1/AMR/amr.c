@@ -1377,8 +1377,8 @@ int main(int argc, char ** argv) {
         flops += n_r_true*(num_interpolations)*3*(n_r_true+n_r);
       }
       avgtime = stencil_time/iterations;
-      printf("Rate (MFlops/s): "FSTR"  Avg time (s): %lf\n",
-             1.0E-06 * flops/stencil_time, avgtime);
+      printf("Rate (MFlops/s): "FSTR"  Avg time (s): %lf\nELAPSED TIME = %7.3f\n",
+             1.0E-06 * flops/stencil_time, avgtime, stencil_time);
     }
   }
 
